@@ -1,0 +1,34 @@
+{{> welcomemenu id="signup"}}
+
+<form class="ui stacked segment form" action="/register" method="POST">
+  <h3 class="ui header">Register</h3>
+  <div class="two fields">
+    <div class="field">
+      <label>First Name</label>
+      <input placeholder="First Name" type="text"  name="firstName" autofocus required>
+    </div>
+    <div class="field">
+      <label>Last Name</label>
+      <input placeholder="Last Name" type="text"  name="lastName" required>
+    </div>
+  </div>
+  <div class="field">
+    <label>Email</label>
+    <input placeholder="Email" type="text" name="email" required>
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <input type="password" name="password" required>
+  </div>
+  <button class="ui blue submit button">Submit</button>
+</form>
+<footer class="ui center aligned segment">
+  <p class="wit website">
+    <a href="https://www.wit.ie/"target="_blank"> Waterford Institute of Technology &trade; </a>
+  </p>
+  <footer class="ui center aligned segment">
+  <a href="http://www.facebook.com/"> <i class="large facebook icon"></i> </a>
+  <a href="href='http://twitter.com/"> <i class="large twitter icon"></i> </a>
+  <a href="href='http://www.linkedin.com/">  <i class="large linkedin icon"></i> </a>
+  </footer>
+</footer>

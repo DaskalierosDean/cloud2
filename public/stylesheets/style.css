@@ -1,0 +1,18 @@
+body{
+  background-image: url( https://cdn.glitch.com/217d8dbf-058f-411d-84c4-aeb0ceab381a%2Fwin7.jpg.jpg?1520525191903;);
+}
+
+.ui.table thead th {
+    background-color: navy;
+      color: white;
+  }
+.button{
+  background-color: yellow;
+}
+
+.name{
+  padding-top:20px;
+  padding-right:5px;
+  line-height:20px;
+  font-weight:bold;
+}
