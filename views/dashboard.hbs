@@ -1,0 +1,47 @@
+{{> menu id="dashboard"}}
+
+<section class="ui segment">
+  <h1 class="ui header">
+    Welcome {{user.firstName}} {{user.lastName}}
+  </h1>
+
+     <section class="ui raised segment">
+    <h3 class="ui header">
+      Your Pictures:
+    </h3>
+    <div class="ui cards">
+      {{#each album.photos}}
+        {{> card }}
+      {{/each}}
+    </div>
+  </section>
+  
+  <section class="ui raised segment">
+    <div class="ui small dividing header"> Picture Upload </div>
+    <section class="ui raised form segment">
+      <form action="/dashboard/uploadpicture" method="post" enctype="multipart/form-data">
+        <div class="two fields">
+          <div class="field">
+            <label>Image</label>
+            <input type="file" name="picture">  </input>
+          </div>
+          <div class="field">
+            <label>Title</label>
+            <input placeholder="Title" type="text" name="title">
+          </div>
+        </div>
+        <button class="ui mini blue submit button"> Upload </button>
+      </form>
+    </section>
+  </section>
+</section>
+<footer class="ui center aligned segment">
+  <p class="wit website">
+    <a href="https://www.wit.ie/"target="_blank"> Waterford Institute of Technology &trade; </a>
+  </p>
+  <footer class="ui center aligned segment">
+  <a href="http://www.facebook.com/"> <i class="large facebook icon"></i> </a>
+  <a href="href='http://twitter.com/"> <i class="large twitter icon"></i> </a>
+  <a href="href='http://www.linkedin.com/">  <i class="large linkedin icon"></i> </a>
+  </footer>
+</footer>

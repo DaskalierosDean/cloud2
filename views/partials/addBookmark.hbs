@@ -1,0 +1,30 @@
+<form class="ui inverted grey stacked segment form " action="/bookmarklist/{{bookmarks.id}}/addBookmark" method="POST">
+  <div class="four fields">
+    
+    <div class="field">
+      <label>Title</label>
+      <input placeholder="Title" type="text" name="title">
+    </div>
+    
+   <div class="field">
+      <label>Link</label>
+      <input placeholder="Link" type="text" name="link" required>
+    </div>
+   
+  
+    <div class="field">
+      <label>Summary</label>
+      <input placeholder="Summary" type="text" name="summary" required>
+    </div>
+    
+    <div class="field">
+      <label>Image</label>
+      <input placeholder="Summary" type="file" name="picture" required>
+    </div>
+    
+  </div>
+  
+
+    <button class="ui blue submit button">Add Bookmark</button>
+  
+</form>

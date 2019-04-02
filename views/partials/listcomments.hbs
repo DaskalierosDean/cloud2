@@ -1,0 +1,16 @@
+<div class="ui stacked segment comments" style="margin: 0 auto;">
+  <h1 class="ui dividing header">Comment</h1>
+  {{#each comments}}
+  <div class="comment">
+    <div>
+    <img "ui avatar image" class="ui mini left floated image " src ="https://cdn.glitch.com/7a69c77e-7d77-4af3-a0a3-f5c174de8be5%2Fbook%20icon.png?1524065046016" alt="book image">
+ </div>
+      <div class="content">
+        <a class="author" id="name">Name: {{name}}</a>
+        <div clas="text" id="comment">
+          Comment: {{comment}}
+  </div>
+        </div>
+        </div>
+        {{/each}}
+  </div>
